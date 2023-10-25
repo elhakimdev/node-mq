@@ -1,4 +1,4 @@
-# server
+# Node-MQ Server Module
 
 This library was generated with [Nx](https://nx.dev).
 
