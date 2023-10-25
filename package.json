@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "watch:server": "nx watch --projects=server -- \"nx run server:build\"",
+    "watch-core-server": "nx watch --projects=core -- \"nx run core:build\"",
+    "node-core-server": "node ./dist/packages/core/index.cjs.js",
+    "start-core-server": "nodemon --exec npm run node-core-server",
+    "start-dev": "concurrently -k \"pnpm watch-core-server\" \"pnpm start-core-server\"",
     "publish": "nx run server:publish"
   },
   "private": true,

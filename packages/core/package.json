@@ -1,5 +1,5 @@
 {
-  "name": "@node-mq/server",
+  "name": "@node-mq/core",
   "version": "0.0.1",
   "dependencies": {},
   "type": "commonjs",

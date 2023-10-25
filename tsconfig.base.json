@@ -1,6 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -15,7 +17,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@node-mq/server": ["packages/server/src/index.ts"]
+      "@node-mq/core": ["packages/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
